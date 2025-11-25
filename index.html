@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task 8 — Simple Blog</title>
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* small custom overrides */
+    .hero {
+      padding: 3rem 0;
+      background: linear-gradient(90deg,#f8fafc,#ffffff);
+    }
+    .card-img-top { height:180px; object-fit:cover; }
+    footer { background:#0d6efd; color:white; padding:20px 0; }
+    .social a { color: white; margin-right:12px; font-size:1.2rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MyBlog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+        aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero text-center">
+    <div class="container">
+      <h1 class="display-6">Welcome to My Blog</h1>
+      <p class="lead">Quick posts built with Bootstrap 5 — responsive and simple.</p>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <main class="container my-5">
+    <div class="row g-4">
+      <!-- Repeat each col for posts -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card">
+          <img src="https://picsum.photos/600/400?random=1" class="card-img-top" alt="post image">
+          <div class="card-body">
+            <h5 class="card-title">Post Title One</h5>
+            <p class="card-text">Short description of the blog post. Keep it concise and engaging.</p>
+            <a href="#" class="btn btn-primary btn-sm">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card">
+          <img src="https://picsum.photos/600/400?random=2" class="card-img-top" alt="post image">
+          <div class="card-body">
+            <h5 class="card-title">Post Title Two</h5>
+            <p class="card-text">Another brief description. Use utility classes to adjust spacing.</p>
+            <a href="#" class="btn btn-primary btn-sm">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card">
+          <img src="https://picsum.photos/600/400?random=3" class="card-img-top" alt="post image">
+          <div class="card-body">
+            <h5 class="card-title">Post Title Three</h5>
+            <p class="card-text">Third post description — responsive layout thanks to grid.</p>
+            <a href="#" class="btn btn-primary btn-sm">Read more</a>
+          </div>
+        </div>
+      </div>
+      <!-- add more cards as needed -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>© <strong>MyBlog</strong> 2025</div>
+      <div class="social">
+        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i> Twitter</a>
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i> Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS CDN (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Optional: icon CDN for social (Bootstrap Icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</body>
+</html>
